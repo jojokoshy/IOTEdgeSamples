@@ -1,0 +1,222 @@
+[
+    {
+        "Id": "ff48bbeb0dce402e96dfc76b7a764172f03b651fd4e734d634f1c1af7329300f",
+        "Created": "2018-08-19T03:37:28.518943984Z",
+        "Path": "node",
+        "Args": [
+            "app.js"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1624,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2018-08-19T03:37:31.820073149Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:b15d84328dcfc91da3c9d82c5a53f71011e9c9005cde0613beee067b1ab796d1",
+        "ResolvConfPath": "/var/lib/docker/containers/ff48bbeb0dce402e96dfc76b7a764172f03b651fd4e734d634f1c1af7329300f/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/ff48bbeb0dce402e96dfc76b7a764172f03b651fd4e734d634f1c1af7329300f/hostname",
+        "HostsPath": "/var/lib/docker/containers/ff48bbeb0dce402e96dfc76b7a764172f03b651fd4e734d634f1c1af7329300f/hosts",
+        "LogPath": "/var/lib/docker/containers/ff48bbeb0dce402e96dfc76b7a764172f03b651fd4e734d634f1c1af7329300f/ff48bbeb0dce402e96dfc76b7a764172f03b651fd4e734d634f1c1af7329300f-json.log",
+        "Name": "/NodeModule",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/var/run/iotedge/workload.sock:/var/run/iotedge/workload.sock"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "9229/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "9229"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/3e7ed394e07aed76b91ce012fdb0950ceb2dd7cdf149986d536e51af5123f2de-init/diff:/var/lib/docker/overlay2/8b04ae824b6d4196b6eebe1c34dd3fd585137fea9a35f1f1f3c27a1184c4546a/diff:/var/lib/docker/overlay2/ea5adcbc90a0de3b82468a39d8f2ea116cad66e83d051640b630dc652298cb1d/diff:/var/lib/docker/overlay2/24ca2d714ce49e1c9357f130e4a1623f5f5b8c79e9550e76cf5ebb2070c840ac/diff:/var/lib/docker/overlay2/49203486f3a504a31404f51caa5bd6b56d282dabe2c1cc16a5372fc5be66261a/diff:/var/lib/docker/overlay2/e6b1981a212ff0e5fc4478e586a334d2224bf5169046b8b9ce19c5c862fa5960/diff:/var/lib/docker/overlay2/9ada5ec65adda768094bf86584fa9204c3f22d2cb07b48f51513400c89364992/diff:/var/lib/docker/overlay2/feb7e6db41bdf14d1f07485f5936a3ca408957e04ae1ac8d230a03738787f522/diff:/var/lib/docker/overlay2/438689d640bff4858dedf76bbf1d5f54f0981b2f830c0a1fe0c24e455b87ee47/diff:/var/lib/docker/overlay2/84020811528f866b5c0444a74042bb13dc0c8dc1bdf5a068b785cf51c9494a0e/diff",
+                "MergedDir": "/var/lib/docker/overlay2/3e7ed394e07aed76b91ce012fdb0950ceb2dd7cdf149986d536e51af5123f2de/merged",
+                "UpperDir": "/var/lib/docker/overlay2/3e7ed394e07aed76b91ce012fdb0950ceb2dd7cdf149986d536e51af5123f2de/diff",
+                "WorkDir": "/var/lib/docker/overlay2/3e7ed394e07aed76b91ce012fdb0950ceb2dd7cdf149986d536e51af5123f2de/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/var/run/iotedge/workload.sock",
+                "Destination": "/var/run/iotedge/workload.sock",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "ff48bbeb0dce",
+            "Domainname": "",
+            "User": "node",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "9229/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "IOTEDGE_WORKLOADURI=unix:///var/run/iotedge/workload.sock",
+                "IOTEDGE_DEVICEID=yogaedgerp",
+                "IOTEDGE_AUTHSCHEME=sasToken",
+                "IOTEDGE_MODULEGENERATIONID=636695949941044199",
+                "IOTEDGE_APIVERSION=2018-06-28",
+                "IOTEDGE_IOTHUBHOSTNAME=jkiotedge.azure-devices.net",
+                "IOTEDGE_MODULEID=NodeModule",
+                "RuntimeLogLevel=Information",
+                "IOTEDGE_GATEWAYHOSTNAME=raspberrypi",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=8.11.3",
+                "YARN_VERSION=1.6.0"
+            ],
+            "Cmd": [
+                "node",
+                "app.js"
+            ],
+            "ArgsEscaped": true,
+            "Image": "jojok.azurecr.io/nodemodule:0.0.15-arm32v7",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "net.azure-devices.edge.owner": "Microsoft.Azure.Devices.Edge.Agent"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "f708209d652b197a8ce5465c70d127d1e37f5ed2fa35084ee58022209fd113eb",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "9229/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9229"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/f708209d652b",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "azure-iot-edge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "ff48bbeb0dce"
+                    ],
+                    "NetworkID": "e1566c1c38db8b64278fd6ba5f0b46d70c526cc46608af5b1199b9b88554e91e",
+                    "EndpointID": "3a0db6a055d7ff70a2fac900ada502d84f766a25b739283730037d87286fd786",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:12:00:03",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]

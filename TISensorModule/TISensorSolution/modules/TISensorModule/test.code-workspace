@@ -1,0 +1,1 @@
+{"HostConfig": {"Privileged": "true"} , {"NetworkMode": "host"}}

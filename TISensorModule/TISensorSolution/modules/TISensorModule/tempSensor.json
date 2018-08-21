@@ -1,0 +1,4 @@
+{"NetworkingConfig":{"EndpointsConfig":{"host":{}}},"HostConfig":{"NetworkMode":"host","Privileged": true}}
+
+
+{"accel":{"sensor":"accelerometer","x":null,"y":2.6171875,"z":-2.642578125},"barometer":{"sensor":"barometric pressure","pressure":null},"rhSensor":{"sensor":"humidity","temperature":29.21661376953125,"humidity":45.782470703125}}

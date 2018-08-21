@@ -1,0 +1,49 @@
+FROM  arm32v7/node:8-slim
+
+RUN npm config set unsafe-perm true -g --unsafe-perm 
+
+RUN echo "deb http://archive.raspbian.org/raspbian jessie main contrib non-free rpi firmware" >>  /etc/apt/sources.list \
+	&& apt-key adv --keyserver pgp.mit.edu  --recv-key 0x9165938D90FDDD2E \
+	&& echo "deb http://archive.raspberrypi.org/debian jessie main" >>  /etc/apt/sources.list.d/raspi.list \
+	&& apt-key adv --keyserver pgp.mit.edu  --recv-key 0x82B129927FA3303E
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		less \
+		libraspberrypi-bin \
+		kmod \
+		nano \
+		net-tools \
+		ifupdown \
+		iputils-ping \
+		i2c-tools \
+		usbutils \		
+	&& rm -rf /var/lib/apt/lists/*
+
+
+RUN apt-get update && apt-get install -y \
+  bluetooth \
+  bluez \
+  libbluetooth-dev \
+  libudev-dev \
+  git 
+
+RUN apt-get update && apt-get install -y autoconf build-essential imagemagick libbz2-dev libcurl4-openssl-dev libevent-dev libffi-dev libglib2.0-dev libjpeg-dev libmagickcore-dev libmagickwand-dev libmysqlclient-dev libncurses-dev libpq-dev libreadline-dev libsqlite3-dev libssl-dev libxml2-dev libxslt-dev libyaml-dev zlib1g-dev && rm -rf /var/lib/apt/lists/*
+
+
+RUN npm install sensortag
+
+ADD node-bluetooth-hci-socket ./node-bluetooth-hci-socket
+WORKDIR ./node-bluetooth-hci-socket
+RUN npm install --unsafe-perm
+
+WORKDIR /app/
+
+COPY package*.json ./
+COPY *.js ./
+
+RUN DEBIAN_FRONTEND=noninteractive JOBS=MAX npm install --unsafe-perm
+
+
+
+
+CMD ["node", "app.js"]
